@@ -14,6 +14,7 @@
 		7F4B13AD2028ECD400DA5D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4B13AB2028ECD400DA5D67 /* LaunchScreen.storyboard */; };
 		7F4B13B82028ECD500DA5D67 /* HackwichThree_redux_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B13B72028ECD500DA5D67 /* HackwichThree_redux_Tests.swift */; };
 		7F4B13C32028ECD500DA5D67 /* HackwichThree_redux_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B13C22028ECD500DA5D67 /* HackwichThree_redux_UITests.swift */; };
+		7F4B13D32028F3B500DA5D67 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B13D22028F3B500DA5D67 /* ViewControllerTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7F4B13BE2028ECD500DA5D67 /* HackwichThree(redux)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HackwichThree(redux)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4B13C22028ECD500DA5D67 /* HackwichThree_redux_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackwichThree_redux_UITests.swift; sourceTree = "<group>"; };
 		7F4B13C42028ECD500DA5D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F4B13D22028F3B500DA5D67 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				7F4B13A22028ECD400DA5D67 /* AppDelegate.swift */,
 				7F4B13A42028ECD400DA5D67 /* ViewController.swift */,
+				7F4B13D22028F3B500DA5D67 /* ViewControllerTwo.swift */,
 				7F4B13A62028ECD400DA5D67 /* Main.storyboard */,
 				7F4B13A92028ECD400DA5D67 /* Assets.xcassets */,
 				7F4B13AB2028ECD400DA5D67 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				7F4B13A52028ECD400DA5D67 /* ViewController.swift in Sources */,
 				7F4B13A32028ECD400DA5D67 /* AppDelegate.swift in Sources */,
+				7F4B13D32028F3B500DA5D67 /* ViewControllerTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
