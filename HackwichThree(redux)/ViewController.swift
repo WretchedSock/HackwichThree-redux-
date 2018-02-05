@@ -1,10 +1,7 @@
 //
 //  ViewController.swift
-//  HackwichThree(redux)
-//
+//  HackwichThree(redux) Because the Hackwich guide is different from what you said in class.
 //  Created by CM Student on 2/5/18.
-//  Copyright © 2018 Evan Tamashiro. All rights reserved.
-//
 
 import UIKit
 
