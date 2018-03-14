@@ -10,8 +10,10 @@ import UIKit
 
 class ViewControllerTwo: UIViewController {
 
+    @IBOutlet var typeTemp: UITextField!
+    @IBOutlet var displayTemp: UILabel!
     
-    @IBOutlet var secondTabLabel: UILabel!
+   
     
     
     override func viewDidLoad() {
@@ -20,6 +22,7 @@ class ViewControllerTwo: UIViewController {
         // Do any additional setup after loading the view.
         
         self.title = "Weather"
+        self.displayTemp.text = ""
         
     }
 
@@ -28,6 +31,22 @@ class ViewControllerTwo: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func convertButtonPressed(_ sender: Any) {
+    
+        let x = self.typeTemp.text
+        let y = Float (x - 32)/(9/5)
+        let endCelsius = "Today is \(y) degrees Celsius."
+        
+        
+        
+        self.displayTemp.text = endCelsius
+        
+        
+        
+        
+    }
+    
     
 
     /*
