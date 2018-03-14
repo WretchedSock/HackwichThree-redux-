@@ -14,6 +14,8 @@ class thirdViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.title = "My Bucket List"
     }
 
     override func didReceiveMemoryWarning() {

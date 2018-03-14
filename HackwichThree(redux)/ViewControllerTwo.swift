@@ -21,7 +21,7 @@ class ViewControllerTwo: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.title = "Weather"
+        self.title = "Weather Converter"
         self.displayTemp.text = ""
         
     }
@@ -33,9 +33,8 @@ class ViewControllerTwo: UIViewController {
     }
     
     @IBAction func convertButtonPressed(_ sender: Any) {
-    
-        let x = self.typeTemp.text
-        let y = Float (x - 32)/(9/5)
+        let x = Int((typeTemp.text?.description)!)
+        let y = Float (x! - 32)/(9/5)
         let endCelsius = "Today is \(y) degrees Celsius."
         
         
