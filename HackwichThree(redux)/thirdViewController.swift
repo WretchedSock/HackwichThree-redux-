@@ -8,8 +8,12 @@
 
 import UIKit
 
-class thirdViewController: UIViewController {
+class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var tableView: UITableView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +28,9 @@ class thirdViewController: UIViewController {
     }
     
 
+    
+    
+    
     /*
     // MARK: - Navigation
 
