@@ -10,6 +10,8 @@ import UIKit
 
 class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var bucketList : [String] = ["Travel around Alaska", "Live in Japan", "Become fluent in Japanese", "Make a great YouTube video", "Grow old"]
+    
     @IBOutlet var tableView: UITableView!
     
     
@@ -20,6 +22,7 @@ class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view.
         
         self.title = "My Bucket List"
+        self.tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +30,27 @@ class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Dispose of any resources that can be recreated.
     }
     
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return bucketList.count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
+        
+        let text = bucketList[indexPath.row]
+        
+        cell.textLabel?.text = text
+        
+        return cell
+        
+    }
     
     
     
